@@ -6,10 +6,10 @@ USERID = $(shell id -u)
 install: isroot
 	ln -s $(SOURCE_PREFIX)/platform-tools/adb $(PREFIX)
 	ln -s $(SOURCE_PREFIX)/platform-tools/fastboot $(PREFIX)
+	ln -s $(SOURCE_PREFIX)/platform-tools/dmtracedump $(PREFIX)
 	ln -s $(SOURCE_PREFIX)/tools/android $(PREFIX)
 	ln -s $(SOURCE_PREFIX)/tools/emulator64-x86 $(PREFIX)
 	ln -s $(SOURCE_PREFIX)/tools/bin/sdkmanager $(PREFIX)
-	ln -s $(SOURCE_PREFIX)/dmtracedump $(PREFIX)
 
 isroot:
 	@if [ $(USERID) -ne 0 ]; then\
