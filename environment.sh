@@ -3,9 +3,9 @@
 export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
 
 export LD_LIBRARY_PATH=/opt/android/tools/lib64:/opt/android/tools/lib
-export ANDROID_EMULATOR_HOME=/home/m3cool/.android
+export ANDROID_EMULATOR_HOME=$HOME/.android
 export ANDROID_SDK_ROOT=/opt/android
-export PATH=$PATH:/opt/android/tools
+export PATH=$PATH:/opt/android/tools:/opt/android/platform-tools
 
 [[ -f /dev/kvm ]] && sudo modprobe kvm-intel
 
